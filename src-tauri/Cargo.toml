@@ -1,12 +1,12 @@
 [package]
 name = "IT-Tools"
-version = "0.1.0"
+version = "0.2.0"
 description = "Useful tools for developer and people working in IT"
 authors = ["Corentin Thomasset"]
 license = "GPLv3"
-repository = "https://github.com/CorentinTh/it-tools"
-edition = "2021"
-rust-version = "1.82.0"
+repository = "https://github.com/boltomli/it-tools"
+edition = "2024"
+rust-version = "1.85.0"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -15,11 +15,11 @@ name = "app_lib"
 crate-type = ["staticlib", "cdylib", "rlib"]
 
 [build-dependencies]
-tauri-build = { version = "2.0", features = [] }
+tauri-build = { version = "2", features = [] }
 
 [dependencies]
-serde_json = "1.0"
-serde = { version = "1.0", features = ["derive"] }
+serde_json = "1"
+serde = { version = "1", features = ["derive"] }
 log = "0.4"
-tauri = { version = "2.0", features = [] }
-tauri-plugin-log = "2.0"
+tauri = { version = "2", features = [] }
+tauri-plugin-log = "2"
