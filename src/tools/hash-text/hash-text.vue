@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import type { lib } from 'crypto-js';
 import { MD5, RIPEMD160, SHA1, SHA224, SHA256, SHA3, SHA384, SHA512, enc } from 'crypto-js';
+import { BLAKE3 } from './hash-text.service';
 
 import InputCopyable from '../../components/InputCopyable.vue';
 import { convertHexToBin } from './hash-text.service';
@@ -15,6 +16,7 @@ const algos = {
   SHA384,
   SHA3,
   RIPEMD160,
+  BLAKE3,
 } as const;
 
 type AlgoNames = keyof typeof algos;

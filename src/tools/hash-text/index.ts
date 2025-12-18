@@ -20,6 +20,7 @@ export const tool = defineTool({
     'SHA384',
     'SHA3',
     'RIPEMD160',
+    'BLAKE3',
   ],
   component: () => import('./hash-text.vue'),
   icon: EyeOff,
